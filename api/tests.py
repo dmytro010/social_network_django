@@ -1,4 +1,3 @@
-from http import client
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from api import serializers
@@ -6,8 +5,7 @@ from .models import Post, User
 from . import serializers
 from django.urls import reverse
 import json
-# from rest_framework.test import force_authenticate
-from django.contrib.auth.hashers import make_password
+
 
 class PostsApiTestCase(APITestCase):
 
